@@ -23,11 +23,10 @@ function App() {
 
       
       // const url = 'https://api.openweathermap.org/data/2.5'
-      // const key = '4e373f47e8cde896c1d7d6a65d208cf1'
 
-      // await fetch(`http://api.openweathermap.org/data/2.5/weather?q=London&APPID=4e373f47e8cde896c1d7d6a65d208cf1`)
-      // await fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=21.9318252&lon=86.7315687&units=metric&APPID=4e373f47e8cde896c1d7d6a65d208cf1`)
-      await fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=4e373f47e8cde896c1d7d6a65d208cf1`)
+      // await fetch(`http://api.openweathermap.org/data/2.5/weather?q=London&APPID=api key here`)
+      // await fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=21.9318252&lon=86.7315687&units=metric&APPID=api key here`)
+      await fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=api key here`)
       // await fetch(`${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
       .then(res => res.json())
       .then(result => {
@@ -41,11 +40,11 @@ function App() {
 
 //   const LocalName = async(e)=>{
 // setName(e.target.value);
-// await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${name}&APPID=4e373f47e8cde896c1d7d6a65d208cf1`)
+// await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${name}&APPID=api key here`)
 //   }
 
 //   const submit  =async()=>{
-//     await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${name}&APPID=4e373f47e8cde896c1d7d6a65d208cf1`)
+//     await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${name}&APPID=api key here`)
 //     console.log("data");
 //   }
 
